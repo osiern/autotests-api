@@ -1,5 +1,5 @@
 from typing import TypedDict
-import httpx import Response
+from httpx import Response
 
 from clients.api_client import APIClient
 
@@ -19,7 +19,7 @@ class PublicUsersClient(APIClient):
     которые не требуют авторизации.
     """
 
-    def create_user_api(self, request: CreateUserRequest) -> httpx.Response:
+    def create_user_api(self, request: CreateUserRequest) -> Response:
         """
         Метод создает пользователя.
 
